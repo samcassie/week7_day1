@@ -1,0 +1,77 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: lightgrey;
+    font-size: 20px;
+    font-family: monospace;
+}
+
+
+#addForm {
+    background-color: white;
+    top: 5%;
+    left: 10%;
+    width: 75%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid black;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-left: 10px solid black;
+}
+
+#taskList {
+    list-style-type: none;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    position: fixed;
+    padding-left: 0;
+}
+
+li {
+    padding: 10px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 1px solid grey;
+    border-left: 10px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+li.completed {
+    background-color: lightgreen;
+}
+
+li.not-completed {
+    background-color: #ff9f82;
+}
+
+.completeButton{
+  padding: 10px;
+  background: white;
+  color: black;
+  cursor: pointer;
+  border: 1px solid #000;
+  border-radius: 10px;
+  width: 120px;
+}
+
+.priority {
+    padding: 10px;
+    -webkit-animation: flash-red 0.5s infinite;
+}
+
+@-webkit-keyframes flash-red {
+  0%   { background-color: #DC143C; }
+  49% { background-color: #DC143C; }
+  50% { background-color: #ff9f82; }
+  99% { background-color: #ff9f82; }
+  100% { background-color: #DC143C; }
